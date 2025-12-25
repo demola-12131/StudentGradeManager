@@ -235,11 +235,11 @@ class BellsAcademicPlanner(QMainWindow):
         # 3. Refresh the interactive charts
         self.canvas.update_charts(self.engine.df)
 
-# Entry Point to launch the application [cite: 109, 110]
+# THIS MUST BE AT THE VERY END OF main.py
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     
-    # Modern font for high-fidelity look
+    # Optional: Setting a professional font
     font = QFont("Segoe UI", 10)
     app.setFont(font)
     

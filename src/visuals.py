@@ -23,7 +23,7 @@ class AnalyticsCanvas(FigureCanvas):
             
             # Chart 1: Grade Frequency (Seaborn)
             order = ['A', 'B', 'C', 'D', 'E', 'F']
-            sns.countplot(x='Grade', data=df, ax=self.ax1, palette='viridis', order=order)
+            sns.countplot(x='Grade', data=df, ax=self.ax1, hue='Grade', palette='viridis', order=order, legend=False)
             self.ax1.set_title("Grade Frequency Distribution", color='white')
             self.ax1.tick_params(colors='white')
 
